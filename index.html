@@ -281,6 +281,39 @@
             font-size: 0.8rem;
         }
 
+        @media screen and (max-width: 768px) {
+            .portfolio-tags {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .tag {
+                font-size: 1rem;
+                padding: 10px 20px;
+                margin: 5px;
+                display: inline-block;
+            }
+        }
+
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .skills-tags {
+                gap: 8px;
+            }
+            
+            .skills-tags .tag {
+                font-size: 1rem;
+                padding: 12px 22px;
+                margin: 0;
+            }
+        }
+
         /* Projects section */
         .projects {
             background-color: white;
@@ -623,7 +656,7 @@
                 </div>
                 <div class="about-content">
                     <div class="about-img">
-                        <img src="./acquah.jpeg" alt="acquah.jpeg">
+                        <img src="https://qwekua.github.io/professional/acquah.jpeg" alt="Enock Acquah Adomanu">
                     </div>
                     <div class="about-text">
                         <h3>Who Am I?</h3>
@@ -641,13 +674,13 @@
                              and staying ahead of industry trends. If you’re looking for a dedicated developer to bring your ideas to life, let’s connect!</p>
                         <div class="skills">
                             <h3>My Skills</h3>
-                            <div class="portfolio-tags">
-                                <span class="tag"><Node.js</span>
+                            <div class="portfolio-tags skills-tags">
+                                <span class="tag">Node.js</span>
                                 <span class="tag">CSS</span>
                                 <span class="tag">React</span>
                                 <span class="tag">Python</span>
                                 <span class="tag">CRM</span>
-                                <span class="tag">Javascrypt</span>
+                                <span class="tag">JavaScript</span>
                             </div>
                         </div>
                         <a href="#" class="btn" onclick="switchPage('contact')">Get In Touch</a>
@@ -665,78 +698,59 @@
                     <h2>My Portfolio</h2>
                 </div>
                 <div class="portfolio-items">
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-img">
-                            <img src="./CRM.png" alt="Portfolio Item 1">
-                        </div>
-                        <div class="portfolio-info">
-                            <h3>Prospect List</h3>
-                            <p>A customized Customer Relationship Management (CRM) system designed
-                                 to streamline customer interactions, automate workflows, and improve data-driven decision-making.
-                                 This project involved system customization, third-party integrations, 
-                                and user training to enhance business efficiency.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">CRM Development</span>
-                                <span class="tag">System Integration</span>
-                                <span class="tag">Process Automation</span>
-                            </div>
-                            <a href="https://docs.google.com/spreadsheets/d/1Eqls3s_8BUixDCes6DKbnRbkZGRQI3o1/edit?usp=drivesdk&ouid=114558915166851872651&rtpof=true&sd=true" class="btn">View Details</a>
-                        </div>
-                    </div>
-
                     <!-- Portfolio Item 2 -->
                     <div class="portfolio-item">
                         <div class="portfolio-img">
-                            <img src="webdev.png" alt="webdev.png">
+                            <img src="https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fyungstory.vercel.app%2F?w=600&h=400" alt="Music Website">
                         </div>
                         <div class="portfolio-info">
-                            <h3>Web Dev Front End</h3>
-                            <p>This project involved designing and developing a personal portfolio website
-                                 to showcase my professional journey, skills, and projects. The site features a clean, 
-                                 modern interface with smooth navigation and responsiveness across devices.
-
-                                Accomplishments:
-                                    •	Built an interactive and user-friendly interface.
-                                    •	Implemented a responsive design for accessibility on all screen sizes.
-                                    •	Optimized performance for fast load times and smooth navigation.</p>
+                            <h3>Music Website</h3>
+                            <p>A modern frontend website designed for music artists to showcase their work,
+                               including music tracks, videos, tour dates, and merchandise. Features include
+                               audio streaming integration, event calendar, and fan engagement tools.</p>
                             <div class="portfolio-tags">
                                 <span class="tag">HTML</span>
-                                <span class="tag">React</span>
-                                <span class="tag">Javascrypt</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive Design</span>
                             </div>
-                            <a href="https://qwekua.vercel.app/#" class="btn">View Details</a>
+                            <a href="https://yungstory.vercel.app/" class="btn">View Details</a>
                         </div>
                     </div>
 
-                    <!-- Portfolio Item 3 -->
+                    <!-- New Portfolio Item 1: Credit Card Website -->
                     <div class="portfolio-item">
                         <div class="portfolio-img">
-                            <img src="./job creation.jpg" alt="job Creation.jpg">
+                            <img src="https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fwww.elitecards.cc/?w=600&h=400" alt="Credit Card Website">
                         </div>
                         <div class="portfolio-info">
-                            <h3>Job Creation and Unemployment Rate in Ghana</h3>
-                            <p>My mission is to help address youth unemployment in Ghana 
-                                by providing young people with the tools and skills necessary
-                                 to thrive in the digital economy. By focusing on digital skills development, 
-                                 I aim to equip the youth with practical abilities that will 
-                                 allow them to secure jobs, start businesses, and contribute 
-                                 to national economic growth. The digital skills training program will bridge 
-                                 the gap between the youth’s aspirations and the job market’s demands,
-                                  enabling them to be competitive in a rapidly evolving job market.
-                                   This program will not only reduce unemployment but also help in creating
-                                    a sustainable future for youth in Ghana by fostering entrepreneurship and 
-                                    boosting the local economy.
-                            </p>
+                            <h3>Credit Card Sales Website</h3>
+                            <p>A responsive frontend website designed for showcasing and selling various credit card products. Features include product comparison, application forms, and secure payment integration.</p>
                             <div class="portfolio-tags">
-                                <span class="tag">Google slide</span>
-                                <span class="tag"> ChatGPT</span>
-                                <span class="tag">Ghana Statistical Service</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive Design</span>
                             </div>
-                            <a href="https://docs.google.com/presentation/d/16Cq4op27MEYZ6qCddPPGHgqDUZv0gKCkx1X9KLZsLQA/edit?usp=sharing" class="btn">View Details</a>
+                            <a href="https://www.elitecards.cc/" class="btn">View Project</a>
                         </div>
                     </div>
 
+                    <!-- New Portfolio Item 2: Personal Portfolio Website -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fqwekua.github.io%2Fchristy%2F?w=600&h=400" alt="Personal Portfolio Website">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>A custom-designed personal portfolio website built for a friend to showcase their professional work, skills, and accomplishments. Fully responsive with modern UI/UX principles.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive Design</span>
+                            </div>
+                            <a href="https://qwekua.github.io/christy/" class="btn">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -755,21 +769,13 @@
                     <!-- Project Card 1 -->
                     <div class="project-card">
                         <div class="project-img">
-                            <img src="./ENT.png" alt="ENT.png">
+                            <img src="https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fvoteboothgh.vercel.app%2F?w=600&h=400" alt="Voting Website">
                         </div>
                         <div class="project-content">
-                            <h3>Bridging the Gap Between SMEs and Tech in Ghana</h3>
-                            <p>This case study explores how a digital platform can help 
-                                small and medium-sized enterprises (SMEs) in Ghana leverage technology for growth.
-                                 Many SMEs face challenges such as limited digital adoption, 
-                                 inventory management issues, and lack of online presence. 
-                                 Our platform provides business management tools, e-commerce integration, 
-                                 and digital marketing support to help them scale.
-                            </p>
-                            <p>Technologies used:Front-end: HTML, React, JavaScript, 
-                                Back-end: MySQL / Firebase, 
-                                Payment Integration: Mobile Money & Digital Payment APIs</p>
-                            <a href="https://docs.google.com/presentation/d/1waTPgmrDjzs7Ko_j2MOjlKIufXzMjaqe/edit?usp=sharing&ouid=114558915166851872651&rtpof=true&sd=true" class="btn">View Case Study</a>
+                            <h3>Voting Website</h3>
+                            <p>A modern voting platform designed to facilitate secure and accessible online voting for various events and elections. Features include user authentication, candidate profiles, real-time vote tracking, and result visualization.</p>
+                            <p>Technologies used: Front-end: HTML, CSS, JavaScript, Back-end: PocketBase</p>
+                            <a href="https://voteboothgh.vercel.app/" class="btn">View Project</a>
                         </div>
                     </div>
 
@@ -867,7 +873,6 @@
                                     <p>+233 201874166</p>
                                 </div>
                             </div>
-                        </div>
 
                         <h3>Follow Me</h3>
                         <div class="social-links">
